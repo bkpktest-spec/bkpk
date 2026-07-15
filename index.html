@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BKPK Land Promoters</title>
+<style>
+:root{--gold:#d9a52b;--gold2:#f7d06a;--black:#050706;--cream:#f8f4ea;--muted:#c9c9c9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:4px 4px;z-index:20}
+nav{position:fixed;top:0;left:0;width:100%;z-index:30;padding:18px 7%;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,rgba(0,0,0,.92),rgba(0,0,0,.25),transparent);backdrop-filter:blur(5px)}
+.brand{font-family:Georgia,serif;color:var(--gold2);font-size:28px;font-weight:bold;letter-spacing:3px}
+.brand small{display:block;font:11px Arial;color:#fff;letter-spacing:4px;text-align:center}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;position:relative}
+.hero-copy{padding:150px 7% 90px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(115deg,#050706 0%,#0b0d0c 80%,#c48e1c 80.3%,#f2c95e 82%,transparent 82.3%);z-index:2}
+.logo-mark{width:130px;height:130px;border:4px solid var(--gold2);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font:700 42px Georgia;margin-bottom:24px;box-shadow:0 0 35px #d9a52b30}
+.hero h1{font:700 clamp(64px,9vw,145px)/.82 Georgia,serif;letter-spacing:9px}
+.hero h2{color:var(--gold2);font-size:clamp(25px,3vw,48px);letter-spacing:7px;margin:20px 0 8px}
+.tag{letter-spacing:6px;font-size:15px;color:#eee}
+.gold-line{width:78%;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:20px 0}
+.hero p{max-width:570px;color:#d8d8d8;line-height:1.7}
+.buttons{display:flex;gap:15px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:15px 25px;border-radius:3px;text-decoration:none;font-weight:bold;letter-spacing:1px}
+.btn.gold{background:linear-gradient(135deg,var(--gold2),#a86e08);color:#090909}
+.btn.outline{border:1px solid var(--gold);color:#fff}
+.hero-image{background:linear-gradient(90deg,rgba(0,0,0,.08),rgba(0,0,0,.05)),url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85") center/cover;position:relative}
+.hero-image:after{content:"BUILDING\A BETTER TOMORROWS,\A TOGETHER!";white-space:pre;position:absolute;top:15%;left:10%;color:#090909;font-size:clamp(26px,3vw,52px);font-weight:900;line-height:1.1;text-shadow:0 2px 20px #fff}
+section{padding:90px 7%}
+.title{text-align:center;margin-bottom:55px}
+.title span{color:var(--gold);letter-spacing:4px;font-size:13px}
+.title h2{font:700 clamp(35px,5vw,64px) Georgia;margin-top:10px}
+.features{background:linear-gradient(180deg,#050706,#0c0e0d)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{border:1px solid #a87b265e;background:linear-gradient(145deg,#121513,#070807);padding:36px 25px;min-height:220px;transition:.35s}
+.card:hover{transform:translateY(-8px);border-color:var(--gold2);box-shadow:0 15px 40px #000}
+.icon{font-size:38px;color:var(--gold2);margin-bottom:22px}
+.card h3{margin-bottom:12px;letter-spacing:1px}
+.card p{color:#aaa;line-height:1.6}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;background:var(--cream);color:#0a0a0a}
+.house{height:500px;background:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85") center/cover;border:8px solid #fff;box-shadow:20px 20px 0 var(--gold)}
+.about h2{font:700 clamp(38px,5vw,65px) Georgia;margin:15px 0}
+.about p{line-height:1.8;color:#444;margin-bottom:18px}
+.quote{font:italic 27px Georgia;color:#b47b10;border-left:4px solid var(--gold);padding-left:20px}
+.contact{background:radial-gradient(circle at 75% 20%,#352609 0,transparent 28%),#050706}
+.contact-wrap{max-width:1050px;margin:auto;border:1px solid var(--gold);padding:45px;display:grid;grid-template-columns:1fr 1fr;gap:35px;background:#0b0d0c}
+.contact-item{padding:20px;border-bottom:1px solid #4c3a18}
+.contact-item b{display:block;color:var(--gold2);font-size:13px;letter-spacing:2px;margin-bottom:8px}
+.contact-item a{color:#fff;text-decoration:none;font-size:20px}
+footer{padding:30px 7%;border-top:1px solid #6f531d;text-align:center;color:#aaa}
+footer b{color:var(--gold2)}
+@media(max-width:900px){
+ nav ul{display:none}.hero{grid-template-columns:1fr}.hero-copy{min-height:720px;background:linear-gradient(180deg,rgba(5,7,6,.94),rgba(5,7,6,.8)),url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80") center/cover}.hero-image{display:none}
+ .grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.contact-wrap{grid-template-columns:1fr}
+}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero-copy{padding-top:120px}.hero h1{font-size:65px}.hero h2{font-size:24px}.about,.features,.contact{padding:65px 6%}.house{height:330px}.contact-wrap{padding:22px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">BKPK<small>LAND PROMOTERS</small></div>
+  <ul><li><a href="#home">HOME</a></li><li><a href="#services">SERVICES</a></li><li><a href="#about">ABOUT</a></li><li><a href="#contact">CONTACT</a></li></ul>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-copy">
+    <div class="logo-mark">BKPK</div>
+    <h1>BKPK</h1>
+    <h2>LAND PROMOTERS</h2>
+    <div class="gold-line"></div>
+    <div class="tag">YOUR TRUST, OUR PROMISE</div>
+    <p style="margin-top:24px">Premium plots, transparent property guidance and value-focused investments. Building relationships and creating landmarks for tomorrow.</p>
+    <div class="buttons"><a class="btn gold" href="#contact">LET'S CONNECT</a><a class="btn outline" href="#services">EXPLORE SERVICES</a></div>
+  </div>
+  <div class="hero-image"></div>
+</header>
+
+<section class="features" id="services">
+  <div class="title"><span>WHY CHOOSE BKPK</span><h2>Invest With Confidence</h2></div>
+  <div class="grid">
+    <div class="card"><div class="icon">⌖</div><h3>PREMIUM PLOTS</h3><p>Carefully selected land opportunities in promising locations.</p></div>
+    <div class="card"><div class="icon">✓</div><h3>TRUST & TRANSPARENCY</h3><p>Clear communication and dependable support at every step.</p></div>
+    <div class="card"><div class="icon">▤</div><h3>LEGAL CLEAR</h3><p>Property guidance focused on clarity and documentation.</p></div>
+    <div class="card"><div class="icon">↗</div><h3>BEST VALUE INVESTMENT</h3><p>Opportunities selected with long-term value in mind.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="house"></div>
+  <div>
+    <span style="color:#b47b10;letter-spacing:4px;font-weight:bold">OUR PROMISE</span>
+    <h2>Building Better Tomorrows, Together.</h2>
+    <p>BKPK Land Promoters helps customers find land opportunities with a focus on trust, transparency and lasting value.</p>
+    <p>From your first enquiry to property guidance, our goal is to make the journey simple, professional and comfortable.</p>
+    <div class="quote">“Building Relationships, Creating Landmarks.”</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="title"><span>LET'S CONNECT</span><h2>Start Your Property Journey</h2></div>
+  <div class="contact-wrap">
+    <div class="contact-item"><b>INSTAGRAM</b><a href="https://www.instagram.com/bkpk.land_promotors" target="_blank">@bkpk.land_promotors</a></div>
+    <div class="contact-item"><b>WHATSAPP / CALL</b><a href="tel:+916374263306">6374263306</a> &nbsp; / &nbsp; <a href="tel:+919025979438">9025979438</a></div>
+    <div class="contact-item"><b>FACEBOOK</b><a href="#">Bk start up</a></div>
+    <div class="contact-item"><b>YOUTUBE</b><a href="#">BKPK LAND PROMOTERS</a></div>
+  </div>
+</section>
+
+<footer>© 2026 <b>BKPK LAND PROMOTERS</b> — Turning Dreams into Realities, One Plot at a Time.</footer>
+</body>
+</html>
